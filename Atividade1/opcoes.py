@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QComboBox, QSpinBox, Q
 class OpcoesWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Opções do Quiz")
+        self.setWindowTitle("Opções")
         self.setGeometry(300, 300, 300, 200)
 
         layout = QVBoxLayout()
