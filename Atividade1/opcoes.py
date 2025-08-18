@@ -10,7 +10,7 @@ class OpcoesWindow(QWidget):
 
         layout.addWidget(QLabel("Dificuldade:"))
         self.difficulty_combo = QComboBox()
-        self.difficulty_combo.addItems(["easy", "medium", "hard"])
+        self.difficulty_combo.addItems(["facil", "medio", "dificil"])
         layout.addWidget(self.difficulty_combo)
 
         layout.addWidget(QLabel("Número de perguntas:"))
