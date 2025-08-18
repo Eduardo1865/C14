@@ -23,3 +23,5 @@ git pull origin main
 ```
 
 > ✅ **Resultado:** Conflito resolvido com sucesso!
+
+---
