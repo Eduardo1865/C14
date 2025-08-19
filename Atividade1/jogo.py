@@ -33,7 +33,14 @@ class QuizApp(QWidget):
             btn.clicked.connect(self.check_answer)
             self.layout.addWidget(btn)
             self.answer_buttons.append(btn)
+        
+        self.skip_button = QPushButton("Pular questão")
+        self.skip_button.clicked.connect(self.skip_question)
+        self.layout.addWidget(self.skip_button)
 
+        self.load_question()
+    def skip_question(self):
+        self.current_question += 1
         self.load_question()
 
     def get_questions(self, difficulty, num_questions):
