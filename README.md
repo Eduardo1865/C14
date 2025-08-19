@@ -3,6 +3,11 @@ Repo para a aula de C14
 
 ---
 ## Para o projeto que está no Atividade1
+## QUIZ
+Esse projeto é um jogo de quiz
+
+## Como rodar?
+Tem um arquivo executavel, é só clicar nele
 
 ## 📦 Instalação do Pipenv
 
@@ -35,7 +40,7 @@ Para ativar o ambiente virtual do Pipenv:
 pipenv shell
 ```
 
-### 5. Executar o projeto
+### 5. Executar o projeto - forma alternativa
 Para executar o menu principal do quiz:
 
 ```powershell
