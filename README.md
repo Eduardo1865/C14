@@ -3,8 +3,32 @@ Repo para a aula de C14
 
 ---
 ## Para o projeto que está no Atividade1
-## QUIZ
-Esse projeto é um jogo de quiz
+
+## 🎯 QUIZ - Jogo de Perguntas e Respostas
+
+Este projeto é um **jogo de quiz interativo** desenvolvido em Python usando a biblioteca PyQt5 para interface gráfica. O jogo apresenta as seguintes funcionalidades:
+
+### 📋 Funcionalidades Principais:
+
+- **Interface Gráfica Intuitiva**: Menu principal com opções para iniciar o quiz e configurar opções
+- **Perguntas Online**: Utiliza a API do Open Trivia Database (opentdb.com) para buscar perguntas em tempo real
+- **Níveis de Dificuldade**: Permite escolher entre três níveis de dificuldade:
+  - Fácil
+  - Médio  
+  - Difícil
+- **Configuração Personalizável**: 
+  - Número de perguntas (1 a 20)
+  - Seleção de dificuldade
+- **Sistema de Pontuação**: Acompanha os acertos em tempo real
+- **Perguntas de Múltipla Escolha**: Cada pergunta possui 4 alternativas
+- **Resultado Final**: Exibe a pontuação total ao final do quiz
+
+### 🏗️ Estrutura do Projeto:
+
+- `menu.py` - Tela principal do jogo com menu de navegação
+- `jogo.py` - Lógica principal do quiz e interface do jogo
+- `opcoes.py` - Janela de configurações para personalizar o quiz
+- `menu.spec` - Arquivo de configuração para build do executável
 
 ## Como rodar?
 Tem um arquivo executavel, é só clicar nele
