@@ -42,4 +42,4 @@ Para executar o menu principal do quiz:
 pipenv run python menu.py
 ```
 
-
+Ou simplesmente clicar no executável.
