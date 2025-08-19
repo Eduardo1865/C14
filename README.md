@@ -1,74 +1,117 @@
-# 🚀 C14
-Repo para a aula de C14
+# 🎮 Quiz Game - C14
+
+> Um jogo de quiz interativo com interface gráfica moderna
 
 ---
-## Para o projeto que está no Atividade1
 
-## 🎯 QUIZ - Jogo de Perguntas e Respostas
+## 📖 Sobre o Projeto
 
-Este projeto é um **jogo de quiz interativo** desenvolvido em Python usando a biblioteca PyQt5 para interface gráfica. O jogo apresenta as seguintes funcionalidades:
+Bem-vindo ao **Quiz Game**! 🎉 
 
-### 📋 Funcionalidades Principais:
+Este é um jogo de perguntas e respostas desenvolvido em Python com PyQt5, que oferece uma experiência divertida e educativa. O jogo busca perguntas em tempo real da internet e permite que você teste seus conhecimentos em diferentes níveis de dificuldade.
 
-- **Interface Gráfica Intuitiva**: Menu principal com opções para iniciar o quiz e configurar opções
-- **Perguntas Online**: Utiliza a API do Open Trivia Database (opentdb.com) para buscar perguntas em tempo real
-- **Níveis de Dificuldade**: Permite escolher entre três níveis de dificuldade:
-  - Fácil
-  - Médio  
-  - Difícil
-- **Configuração Personalizável**: 
-  - Número de perguntas (1 a 20)
-  - Seleção de dificuldade
-- **Sistema de Pontuação**: Acompanha os acertos em tempo real
-- **Perguntas de Múltipla Escolha**: Cada pergunta possui 4 alternativas
-- **Resultado Final**: Exibe a pontuação total ao final do quiz
+---
 
-### 🏗️ Estrutura do Projeto:
+## ✨ Funcionalidades
 
-- `menu.py` - Tela principal do jogo com menu de navegação
-- `jogo.py` - Lógica principal do quiz e interface do jogo
-- `opcoes.py` - Janela de configurações para personalizar o quiz
-- `menu.spec` - Arquivo de configuração para build do executável
+### 🎯 **Core Features**
+| Funcionalidade | Descrição |
+|---|---|
+| 🖥️ **Interface Gráfica** | Menu intuitivo e design limpo |
+| 🌐 **Perguntas Online** | Conexão com Open Trivia Database |
+| 📊 **Sistema de Pontuação** | Acompanhe seus acertos em tempo real |
+| 🎲 **Perguntas Aleatórias** | Cada partida é única! |
 
-## Como rodar?
-Tem um arquivo executavel, é só clicar nele
+### ⚙️ **Configurações Personalizáveis**
+- 🎚️ **3 Níveis de Dificuldade**: Fácil, Médio e Difícil
+- 📝 **Quantidade de Perguntas**: Escolha de 1 a 20 perguntas
+- 🔄 **Múltipla Escolha**: 4 alternativas por pergunta
 
-## 📦 Instalação do Pipenv
+---
 
-### 1. Instalar o Pipenv
-Abra o terminal (PowerShell no Windows) e execute:
+## 🏗️ Arquitetura do Projeto
 
-```powershell
-pip install pipenv
+```
+Atividade1/
+├── 🏠 menu.py      # Interface principal e navegação
+├── 🎮 jogo.py      # Engine do quiz e gameplay
+├── ⚙️ opcoes.py    # Configurações e preferências
+├── 📦 menu.spec   # Build configuration
+└── 🔧 Pipfile     # Dependências do projeto
 ```
 
-### 2. Verificar instalação
-Execute:
+---
 
+## 🚀 Como Executar
+
+### 🎯 **Método Rápido**
+```bash
+# Clique no arquivo executável
+./menu.exe  # (se disponível)
+```
+
+### �️ **Método Desenvolvimento**
+
+#### 1️⃣ **Setup do Ambiente**
 ```powershell
+# Instalar Pipenv
+pip install pipenv
+
+# Verificar instalação
 pipenv --version
 ```
 
-### 3. Instalar dependências do projeto
-Para instalar as dependências listadas no `Pipfile`:
-
+#### 2️⃣ **Preparar Projeto**
 ```powershell
+# Navegar para o diretório
 cd Atividade1
+
+# Instalar dependências
 pipenv install
-```
 
-### 4. Ativar ambiente virtual
-Para ativar o ambiente virtual do Pipenv:
-
-```powershell
+# Ativar ambiente virtual
 pipenv shell
 ```
 
-### 5. Executar o projeto - forma alternativa
-Para executar o menu principal do quiz:
-
+#### 3️⃣ **Executar o Jogo**
 ```powershell
+# Iniciar o quiz
 pipenv run python menu.py
 ```
 
-Ou simplesmente clicar no executável.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+<div align="center">
+
+| Tecnologia | Versão | Uso |
+|---|---|---|
+| ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python) | 3.12 | Linguagem principal |
+| ![PyQt5](https://img.shields.io/badge/PyQt5-Latest-green?logo=qt) | Latest | Interface gráfica |
+| ![Requests](https://img.shields.io/badge/Requests-Latest-orange?logo=python) | Latest | HTTP requests |
+| ![PyInstaller](https://img.shields.io/badge/PyInstaller-Latest-red?logo=python) | Latest | Build executável |
+
+</div>
+
+---
+
+## 🎮 Como Jogar
+
+1. **🏁 Inicie** o jogo executando `menu.py`
+2. **⚙️ Configure** suas preferências (opcional)
+   - Escolha o nível de dificuldade
+   - Defina a quantidade de perguntas
+3. **🎯 Clique** em "Iniciar Quiz"
+4. **📝 Responda** as perguntas de múltipla escolha
+5. **🏆 Veja** sua pontuação final!
+
+---
+
+<div align="center">
+
+**🎉 Divirta-se testando seus conhecimentos! 🧠**
+
+*Desenvolvido para a disciplina C14* 
+
+</div>
