@@ -108,10 +108,8 @@ pipenv run python menu.py
 
 ---
 
-<div align="center">
+# Como resolvi o problema do teste de regressão.
 
-**🎉 Divirta-se testando seus conhecimentos! 🧠**
+os erros introduzidos foram varias mudanças pequenas no funcionamento do código.
 
-*Desenvolvido para a disciplina C14* 
-
-</div>
+reverti o commit utilizando o revert do git
