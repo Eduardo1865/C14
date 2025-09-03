@@ -40,11 +40,19 @@ class QuizApp(QWidget):
 
         self.load_question()
     def skip_question(self):
-        self.current_question += 1
+        self.current_question += 2  # Pula duas questões em vez de uma
         self.load_question()
 
     def get_questions(self, difficulty, num_questions):
-        url = f"https://opentdb.com/api.php?amount={num_questions}&type=multiple&difficulty={difficulty}"
+        # Mapear dificuldades em português para inglês
+        difficulty_map = {
+            "facil": "easy",
+            "medio": "medium", 
+            "dificil": "hard"
+        }
+        api_difficulty = difficulty_map.get(difficulty, difficulty)
+        
+        url = f"https://opentdb.com/api.php?amount={num_questions}&type=multiple&difficulty={api_difficulty}"
         response = requests.get(url)
         data = response.json()
         questions = []
