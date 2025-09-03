@@ -9,6 +9,10 @@ requests = "*"
 pyinstaller = "*"
 
 [dev-packages]
+pytest = "*"
+pytest-qt = "*"
+pytest-mock = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.12"
