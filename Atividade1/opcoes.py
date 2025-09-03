@@ -15,7 +15,7 @@ class OpcoesWindow(QWidget):
 
         layout.addWidget(QLabel("Número de perguntas:"))
         self.num_questions_spin = QSpinBox()
-        self.num_questions_spin.setRange(1, 50)  # Alterado de 20 para 50
+        self.num_questions_spin.setRange(1, 20)  
         self.num_questions_spin.setValue(5)    
         layout.addWidget(self.num_questions_spin)
 

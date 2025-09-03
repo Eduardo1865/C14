@@ -22,8 +22,8 @@ class MenuWindow(QWidget):
         self.setLayout(layout)
 
         self.options = {
-            "difficulty": "medium",
-            "num_questions": 10
+            "difficulty": "easy",
+            "num_questions": 5
         }
 
         self.options_button.clicked.connect(self.open_options)
